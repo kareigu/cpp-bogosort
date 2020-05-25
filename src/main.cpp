@@ -1,6 +1,4 @@
 #include <iostream>
-#include <array>
-#include <algorithm>
 
 void printArr(int arrIndx) {
     std::cout << arrIndx << std::endl;
