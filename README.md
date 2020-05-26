@@ -1,3 +1,3 @@
 # C++ Bogosort
 
-Useseless bogosort program written in C++
+Useless bogosort program written in C++
