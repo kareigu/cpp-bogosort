@@ -1,8 +1,8 @@
 #include <iostream>
 
-#include "print.h"
-#include "fillArr.h"
-#include "randArr.h"
+#include "headers/printArr.h"
+#include "headers/fillArr.h"
+#include "headers/randArr.h"
 
 int main() {
     int arrLen;
