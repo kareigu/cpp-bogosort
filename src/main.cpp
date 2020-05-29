@@ -8,24 +8,31 @@
 int main() {
     int arrLen;
     std::cin >> arrLen;
-    const int *sortedArr = fillArr(&arrLen);
-    //fillArr(sortedArr, arrLen);
-    int *arrToSort = fillArr(&arrLen);
-    //fillArr(arrToSort, arrLen);
+
+    int *sortedArr = new int[arrLen];
+    fillArr(&sortedArr, arrLen);
+
+    int *arrToSort = new int[arrLen];
+    fillArr(&arrToSort, arrLen);
+
     randArr(arrToSort, arrLen);
 
     bool isSorted = false;
 
-    while(true) {
+    while(!isSorted) {
         if(checkArr(sortedArr, arrToSort, arrLen)){
             isSorted = true;
+            delete[] sortedArr;
+            delete[] arrToSort;
         }
         else {
             randArr(arrToSort, arrLen);
         }
+        for (int i = 0; i < arrLen; i++) {
+            std::cout << arrToSort[i];
+        }
+        std::cout << std::endl;
     }
-    for (int i = 0; i < arrLen; i++) {
-        printArr(arrToSort[i]);
-    }
+
     return 0;
 }

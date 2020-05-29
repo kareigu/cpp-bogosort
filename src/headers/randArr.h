@@ -7,6 +7,7 @@ void randArr(int arr[], int arrLen) {
         int b = std::rand() % arrLen;
         int h = arr[a];
 
+
         arr[a] = arr[b];
         arr[b] = h;
     }
