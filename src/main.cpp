@@ -3,6 +3,6 @@
 
 int main() {
     log::print("yes");
-    log::print("ok");
+    log::debug("val", 3);
     return 0;
 }
