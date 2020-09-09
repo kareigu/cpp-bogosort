@@ -1,6 +1,6 @@
 #pragma once
 
-namespace log {
+namespace logger {
   void print(std::string in);
 
   template<typename T>

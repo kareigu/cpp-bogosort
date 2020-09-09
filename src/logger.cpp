@@ -2,7 +2,7 @@
 #include <string>
 #include <iterator>
 
-namespace log {
+namespace logger {
   void print(std::string in) {
     std::cout << in << std::endl;
   }
