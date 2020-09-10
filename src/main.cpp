@@ -9,11 +9,11 @@ int main() {
     int arr2[5] = {0, 2, 5, 1, 2};
     logger::printArr(arr, 10);
     logger::printArr(arr2, 5);
-    logger::debug("val", 5);
+    logger::debug(5);
 
     for (int i = 0; i < 10; i++) {
-        logger::debug("Double", rng::genDouble());
-        logger::debug("Int", rng::genInt());
+        logger::debug(rng::genDouble(), "Double");
+        logger::debug(rng::genInt(), "Int", true);
     }
     
 
