@@ -1,7 +1,7 @@
 #pragma once
 
 namespace rng {
-  void initRng();
+  int initRng();
 
   int genInt();
 

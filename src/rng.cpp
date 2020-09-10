@@ -2,7 +2,6 @@
 #include <array>
 #include <ctime>
 #include <iostream>
-#include "../include/logger.hpp"
 
 namespace rng {
   uint64_t rol64 (uint64_t x, int k) {
@@ -41,11 +40,11 @@ namespace rng {
   }
 
 
-  void initRng () {
+  int initRng () {
     srand((int) time(0));
     int seed = rand();
-    logger::debug("Seed", seed);
     srand48(seed);
+    return seed;
   }
 
   int genInt () {

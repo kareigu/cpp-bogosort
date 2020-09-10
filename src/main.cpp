@@ -3,7 +3,7 @@
 #include "../include/rng.hpp"
 
 int main() {
-    rng::initRng();
+    logger::debug(rng::initRng(), "Seed", true);
     logger::print("yes");
     int arr[10] = {0, 2, 5, 1, 2, 3, 4, 5, 6, 7};
     int arr2[5] = {0, 2, 5, 1, 2};
