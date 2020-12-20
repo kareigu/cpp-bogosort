@@ -14,6 +14,7 @@ int main() {
 
     int* cpyArr = arr::copyArr(origArr, ARR_LEN);
 
+    arr::shuffleArr(cpyArr, ARR_LEN);
     logger::printArr(cpyArr, ARR_LEN);
 
     return 0;

@@ -21,4 +21,19 @@ namespace arr {
 
     return temp;
   }
+
+  void shuffleArr(int* arr, int length) {
+    for (int i = 0; i < 10; i++) {
+      for (int j = 0; j < length; j++) {
+        int tempIndex = j + i;
+        if(tempIndex >= length)
+          tempIndex = 9;
+
+        int temp = arr[tempIndex];
+
+        arr[tempIndex] = arr[i];
+        arr[i] = temp;
+      }
+    }
+  }
 } 
