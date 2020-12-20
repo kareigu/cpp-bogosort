@@ -5,12 +5,10 @@ namespace logger {
 
   template<typename T>
   void debug(T in, std::string field = "val", bool spacing = false) {
-    if(spacing) {
-      std::cout << field << ": " << in << std::endl;
+    if(spacing) 
       std::cout << "--------------" << std::endl;
-    } else {
-      std::cout << field << ": " << in << std::endl;
-    }
+
+    std::cout << field << ": " << in << std::endl;
   }
 
   void printArr(int *in, int len);
